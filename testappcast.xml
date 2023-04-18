@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+    <channel>
+        <title>For unit test only</title>
+        <item>
+            <title>Version 1.0</title>
+            <description>desc: Please update the Scheduling app</description>
+            <pubDate>Sat, 26 Jul 2023 15:20:11 +0000</pubDate>
+            <enclosure url="www.google.com" sparkle:version="1.0" />
+            <sparkle:tags> <sparkle:criticalUpdate /> </sparkle:tags>
+        </item>
+        <!-- The best chosen release -->
+        <item>
+            <title>Version 1.0</title>
+            <enclosure url="www.google.com" sparkle:version="1.0" sparkle:os="android" />
+            <sparkle:deltas>
+                <enclosure url="www.google.com"
+                    sparkle:version="1.0"
+                    sparkle:deltaFrom="2.0"
+                    length="1235"
+                    type="application/octet-stream"
+                    sparkle:edSignature="..." />
+
+                <enclosure url="www.google.com"
+                    sparkle:version="1.0"
+                    sparkle:deltaFrom="1.0"
+                    length="1485"
+                    type="application/octet-stream"
+                    sparkle:edSignature="..." />
+            </sparkle:deltas>
+        </item>
+        <!-- A release testing minimumSystemVersion -->
+        <item>
+            <title>Version 1.0</title>
+            <pubDate>Sat, 26 Jul 2023 15:20:13 +0000</pubDate>
+            <enclosure url="www.google.com" sparkle:version="1.0" sparkle:os="iOS" />
+            <sparkle:minimumSystemVersion>17.0.0</sparkle:minimumSystemVersion>
+        </item>
+        <!-- A joke release testing maximumSystemVersion -->
+        <item>
+            <title>Version 1.0</title>
+            <sparkle:version>1.0</sparkle:version>
+            <sparkle:maximumSystemVersion>1.0.0</sparkle:maximumSystemVersion>
+        </item>
+    </channel>
+</rss>
